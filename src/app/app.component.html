@@ -1,14 +1,17 @@
 <div class="page">
 
   <div class="left-menu">
-    <ul>
-      <li><a [routerLink]="'/screen-one'">Screen One</a></li>
-      <li><a [routerLink]="'/screen-two'">Screen Two</a></li>
-    </ul>
+
+  <div class="menu" cdkMenu>
+    <button class="menu-item" [routerLink]="'/screen-one'" cdkMenuItem>Screen One</button>
+    <button class="menu-item" [routerLink]="'/screen-two'" cdkMenuItem>Screen Two</button>
+  </div>
+
   </div>
 
   <div class="content" role="main">
-    <router-outlet></router-outlet>
+  <router-outlet></router-outlet>
   </div>
 
-</div>
+
+  </div>
