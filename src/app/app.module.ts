@@ -18,7 +18,7 @@ import { AppComponent } from './app.component';
     MatMenuModule,
     MatButtonModule,
     MatToolbarModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -4,6 +4,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { ScreenTwoComponent } from './screen-two.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatCardModule } from '@angular/material/card';
 
 const routes: Routes = [
   { path: '', component: ScreenTwoComponent }
@@ -15,6 +18,9 @@ const routes: Routes = [
     CommonModule,
     MatFormFieldModule,
     MatInputModule,
+    MatTabsModule,
+    MatExpansionModule,
+    MatCardModule,
     RouterModule.forChild(routes)
   ]
 })

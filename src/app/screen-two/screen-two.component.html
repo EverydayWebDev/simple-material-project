@@ -1,6 +1,66 @@
 
 <h1>Screen Two</h1>
 
-<mat-form-field>
+
+<mat-card class="roughing-mill__container mat-elevation-z3">
+    <mat-tab-group class="roughing-mill__container--content secondary-tabs">
+      <mat-tab class="roughing-mill__tabs">
+        <ng-template mat-tab-label>
+          <span>{{ "SetpointsRM"  }}</span>
+        </ng-template>
+        <mat-expansion-panel
+          class="expansion-panel"
+        >
+          <mat-expansion-panel-header
+            class="expansion-panel__header"
+          >
+            <mat-panel-title class="expansion-panel__header--title">
+              {{ "Data" }}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="expansion-panel__content">
+            <div class="order-data">
+
+            </div>
+          </div>
+        </mat-expansion-panel>
+
+
+
+
+
+
+        <mat-expansion-panel [expanded]="true" class="expansion-panel">
+          <mat-expansion-panel-header class="expansion-panel__header">
+            <mat-panel-title class="expansion-panel__header--title">
+              {{ "Setpoints"  }}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <mat-tab-group
+            [dynamicHeight]="true"
+            animationDuration="0"
+            class="secondary-tabs collapsible-tabs"
+          >
+            <mat-tab>
+              <ng-template [mat-tab-label]>
+
+              </ng-template>
+              <!-- <app-setpoints-data
+                [updateForm]="updateFormPassSchedule"
+              ></app-setpoints-data> -->
+
+<ng-container *ngFor="let item of items$ | async">
+
+<mat-form-field class="setpoints-data__row {{ actualPassNo === item.id ? 'highlight' : '' }}">
 <input matInput />
 </mat-form-field>
+
+</ng-container>
+            </mat-tab>
+            </mat-tab-group>
+            </mat-expansion-panel>
+
+        </mat-tab>
+        </mat-tab-group>
+</mat-card>
+
