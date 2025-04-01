@@ -4,7 +4,8 @@ import { BehaviorSubject } from 'rxjs';
 @Component({
   selector: 'app-screen-two',
   templateUrl: './screen-two.component.html',
-  styleUrls: ['./screen-two.component.scss']
+  styleUrls: ['./screen-two.component.scss'],
+  standalone: false
 })
 export class ScreenTwoComponent implements OnDestroy {
   items$ = new BehaviorSubject<any>([]);

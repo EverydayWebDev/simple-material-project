@@ -3,7 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-screen-one',
   templateUrl: './screen-one.component.html',
-  styleUrls: ['./screen-one.component.scss']
+  styleUrls: ['./screen-one.component.scss'],
+  standalone: false
 })
 export class ScreenOneComponent {
   // Add any logic or properties here if needed
