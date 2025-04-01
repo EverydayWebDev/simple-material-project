@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "simple-material-project:build:production"
+              "buildTarget": "simple-material-project:build:production"
             },
             "development": {
-              "browserTarget": "simple-material-project:build:development"
+              "buildTarget": "simple-material-project:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "simple-material-project:build"
+            "buildTarget": "simple-material-project:build"
           }
         },
         "test": {
