@@ -25,6 +25,7 @@ export class ScreenTwoComponent implements OnDestroy {
   }
 
   ngOnDestroy(): void {
-    clearInterval(this.intervalId);
+    clearTimeout(this.intervalId);
+    this.intervalId = null;
   }
 }
