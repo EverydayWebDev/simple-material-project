@@ -1,37 +1,7 @@
 <h1>Screen Two</h1>
 
-
-<mat-card>
   <mat-tab-group animationDuration="0">
-    <mat-tab>
-      <ng-template mat-tab-label>
-        <span>{{ "SetpointsRM" }}</span>
-      </ng-template>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            {{ "Data" }}
-          </mat-panel-title>
-        </mat-expansion-panel-header>
-        <div>
-          <!-- content start -->
-          <!-- content end -->
-        </div>
-      </mat-expansion-panel>
-
-      <mat-expansion-panel [expanded]="true">
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            {{ "Setpoints" }}
-          </mat-panel-title>
-        </mat-expansion-panel-header>
-        <mat-tab-group animationDuration="0">
-          <mat-tab>
-            <ng-template [mat-tab-label]>
-              {{"PassSchedule"}}
-            </ng-template>
-
-
+    <mat-tab label="First">
           <!-- content start -->
             <ng-container *ngFor="let item of items$ | async">
               <mat-form-field>
@@ -39,12 +9,7 @@
               </mat-form-field>
             </ng-container>
           <!-- content end -->
-
-
-          </mat-tab>
-        </mat-tab-group>
-      </mat-expansion-panel>
-
     </mat-tab>
+
+  <mat-tab label="Second"> Content 2 </mat-tab>
   </mat-tab-group>
-</mat-card>
